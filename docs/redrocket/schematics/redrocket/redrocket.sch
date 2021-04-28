@@ -184,4 +184,123 @@ Text Notes 4800 2500 0    50   ~ 0
 Yellow
 Text Notes 4950 1050 0    50   ~ 0
 for SW flashing\nwith Yellow tag
+$Comp
+L Connector:DIN-3 J?
+U 1 1 6089DB8A
+P 6750 5200
+F 0 "J?" H 6750 5567 50  0000 C CNN
+F 1 "Power Jack" H 6750 5476 50  0000 C CNN
+F 2 "" H 6750 5200 50  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/18/40_c091_abd_e-75918.pdf" H 6750 5200 50  0001 C CNN
+	1    6750 5200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:DIN-7_CenterPin7 J?
+U 1 1 6089E6F1
+P 7100 4000
+F 0 "J?" H 7100 4367 50  0000 C CNN
+F 1 "Top Plug" H 7100 4276 50  0000 C CNN
+F 2 "" H 7100 4000 50  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/18/40_c091_abd_e-75918.pdf" H 7100 4000 50  0001 C CNN
+	1    7100 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_02x05_Odd_Even J?
+U 1 1 608AD799
+P 8100 5150
+F 0 "J?" H 8150 5567 50  0000 C CNN
+F 1 "JTAG SW flashing" H 8150 5476 50  0000 C CNN
+F 2 "" H 8100 5150 50  0001 C CNN
+F 3 "~" H 8100 5150 50  0001 C CNN
+	1    8100 5150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x03_Female J?
+U 1 1 608AE612
+P 5400 4450
+F 0 "J?" H 5292 4735 50  0000 C CNN
+F 1 "UART" H 5292 4644 50  0000 C CNN
+F 2 "" H 5400 4450 50  0001 C CNN
+F 3 "~" H 5400 4450 50  0001 C CNN
+	1    5400 4450
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	7100 4300 7100 4650
+Wire Wire Line
+	7100 4650 6750 4650
+Wire Wire Line
+	6750 4650 6750 4900
+Wire Wire Line
+	6350 4100 6350 5200
+Wire Wire Line
+	6350 5200 6450 5200
+Wire Wire Line
+	6350 4100 6800 4100
+NoConn ~ 7050 5200
+Wire Wire Line
+	7400 4100 7800 4100
+Wire Wire Line
+	7800 4100 7800 3450
+Wire Wire Line
+	7800 3450 6000 3450
+Wire Wire Line
+	6000 3450 6000 4350
+Wire Wire Line
+	6000 4350 5600 4350
+Wire Wire Line
+	5600 4550 6200 4550
+Wire Wire Line
+	6200 4550 6200 4000
+Wire Wire Line
+	6200 4000 6800 4000
+Wire Wire Line
+	6800 3900 6100 3900
+Wire Wire Line
+	6100 3900 6100 4450
+Wire Wire Line
+	6100 4450 5600 4450
+Wire Wire Line
+	8400 4950 8600 4950
+Wire Wire Line
+	8600 4950 8600 4000
+Wire Wire Line
+	8600 4000 7400 4000
+Wire Wire Line
+	8400 5150 8700 5150
+Wire Wire Line
+	8700 5150 8700 3900
+Wire Wire Line
+	8700 3900 7400 3900
+Wire Wire Line
+	8400 5050 8500 5050
+Wire Wire Line
+	8500 5050 8500 4100
+Wire Wire Line
+	8500 4100 7800 4100
+Connection ~ 7800 4100
+Wire Wire Line
+	7100 4650 7350 4650
+Wire Wire Line
+	7800 4650 7800 4100
+Connection ~ 7100 4650
+$Comp
+L power:GND #PWR?
+U 1 1 608E744E
+P 7350 4750
+F 0 "#PWR?" H 7350 4500 50  0001 C CNN
+F 1 "GND" H 7355 4577 50  0000 C CNN
+F 2 "" H 7350 4750 50  0001 C CNN
+F 3 "" H 7350 4750 50  0001 C CNN
+	1    7350 4750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7350 4750 7350 4650
+Connection ~ 7350 4650
+Wire Wire Line
+	7350 4650 7800 4650
 $EndSCHEMATC
