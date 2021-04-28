@@ -29,7 +29,7 @@ L Connector:Conn_01x04_Female P?
 U 1 1 60777280
 P 4650 2700
 F 0 "P?" H 4542 2275 50  0000 C CNN
-F 1 "Charge (Floppy Molex)" H 4542 2366 50  0000 C CNN
+F 1 "Charge (Floppy Molex)" H 4550 2350 50  0000 C CNN
 F 2 "" H 4650 2700 50  0001 C CNN
 F 3 "~" H 4650 2700 50  0001 C CNN
 	1    4650 2700
@@ -178,4 +178,10 @@ Text Notes 4350 3500 0    50   ~ 10
 Charge and Develop Cable
 Text Notes 4750 3650 0    50   ~ 0
 TODO
+Text Notes 4800 2800 0    50   ~ 0
+Red
+Text Notes 4800 2500 0    50   ~ 0
+Yellow
+Text Notes 4950 1050 0    50   ~ 0
+for SW flashing\nwith Yellow tag
 $EndSCHEMATC
