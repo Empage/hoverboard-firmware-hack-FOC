@@ -113,9 +113,8 @@ Wire Wire Line
 	4850 2000 5650 2000
 Wire Wire Line
 	4850 1900 5750 1900
-NoConn ~ 3750 1050
-Text Notes 3200 1100 0    50   ~ 0
-NC -> White
+Text Notes 2700 1100 0    50   ~ 0
+GND (J4 Pin 2) -> White
 Wire Wire Line
 	4850 1250 7600 1250
 Wire Wire Line
@@ -142,15 +141,9 @@ $EndComp
 Wire Wire Line
 	7100 2600 7100 2800
 Wire Wire Line
-	7400 2400 7400 2800
-Wire Wire Line
-	7400 2800 7100 2800
-Wire Wire Line
 	4850 2500 5000 2500
 Wire Wire Line
 	5000 2500 5000 2600
-Wire Wire Line
-	5000 2500 5650 2500
 Wire Wire Line
 	5650 2500 5650 2400
 Wire Wire Line
@@ -160,8 +153,8 @@ Text Notes 2500 1300 0    50   ~ 0
 MCU_SWCLK (J4 Pin3) -> Red
 Text Notes 2450 1200 0    50   ~ 0
 MCU_SWDIO (J4 Pin1) -> Green
-Text Notes 7750 2500 0    50   ~ 0
-1: GND\n2: JTAG SWDIO\n3: JTAG SWCLK\n4: UART TX\n5: UART RX\n6: 42V\n7: GND
+Text Notes 7850 2450 0    50   ~ 0
+1: GND UART/JTAG\n2: JTAG SWDIO\n3: JTAG SWCLK\n4: UART TX\n5: UART RX\n6: 42V\n7: GND PWR
 Text Notes 2850 2700 0    50   ~ 0
 Directly connected with "Charge"
 Wire Notes Line
@@ -282,25 +275,89 @@ Wire Wire Line
 Wire Wire Line
 	8500 4100 7800 4100
 Connection ~ 7800 4100
-Wire Wire Line
-	7100 4650 7350 4650
-Wire Wire Line
-	7800 4650 7800 4100
 Connection ~ 7100 4650
 $Comp
 L power:GND #PWR?
 U 1 1 608E744E
-P 7350 4750
-F 0 "#PWR?" H 7350 4500 50  0001 C CNN
-F 1 "GND" H 7355 4577 50  0000 C CNN
-F 2 "" H 7350 4750 50  0001 C CNN
-F 3 "" H 7350 4750 50  0001 C CNN
-	1    7350 4750
+P 7100 4750
+F 0 "#PWR?" H 7100 4500 50  0001 C CNN
+F 1 "GND" H 7105 4577 50  0000 C CNN
+F 2 "" H 7100 4750 50  0001 C CNN
+F 3 "" H 7100 4750 50  0001 C CNN
+	1    7100 4750
+	1    0    0    -1  
+$EndComp
+Text Notes 7750 5150 0    50   ~ 0
+Nose
+Wire Wire Line
+	7100 4750 7100 4650
+$Comp
+L power:GND #PWR?
+U 1 1 608D773D
+P 7800 4200
+F 0 "#PWR?" H 7800 3950 50  0001 C CNN
+F 1 "GND" H 7805 4027 50  0000 C CNN
+F 2 "" H 7800 4200 50  0001 C CNN
+F 3 "" H 7800 4200 50  0001 C CNN
+	1    7800 4200
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7350 4750 7350 4650
-Connection ~ 7350 4650
+	7800 4200 7800 4100
 Wire Wire Line
-	7350 4650 7800 4650
+	4850 1050 7800 1050
+Wire Wire Line
+	7800 1050 7800 2400
+Wire Wire Line
+	7400 2400 7550 2400
+$Comp
+L power:GND #PWR?
+U 1 1 608DCD67
+P 7550 2500
+F 0 "#PWR?" H 7550 2250 50  0001 C CNN
+F 1 "GND" H 7555 2327 50  0000 C CNN
+F 2 "" H 7550 2500 50  0001 C CNN
+F 3 "" H 7550 2500 50  0001 C CNN
+	1    7550 2500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7550 2500 7550 2400
+Connection ~ 7550 2400
+Wire Wire Line
+	7550 2400 7800 2400
+$Comp
+L power:+36V #PWR?
+U 1 1 608E6F34
+P 6150 5100
+F 0 "#PWR?" H 6150 4950 50  0001 C CNN
+F 1 "+36V" H 6165 5273 50  0000 C CNN
+F 2 "" H 6150 5100 50  0001 C CNN
+F 3 "" H 6150 5100 50  0001 C CNN
+	1    6150 5100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6150 5200 6350 5200
+Connection ~ 6350 5200
+Wire Wire Line
+	6150 5200 6150 5100
+Wire Wire Line
+	5000 2500 5400 2500
+$Comp
+L power:+36V #PWR?
+U 1 1 608F3875
+P 5400 2450
+F 0 "#PWR?" H 5400 2300 50  0001 C CNN
+F 1 "+36V" H 5415 2623 50  0000 C CNN
+F 2 "" H 5400 2450 50  0001 C CNN
+F 3 "" H 5400 2450 50  0001 C CNN
+	1    5400 2450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5400 2450 5400 2500
+Connection ~ 5400 2500
+Wire Wire Line
+	5400 2500 5650 2500
 $EndSCHEMATC

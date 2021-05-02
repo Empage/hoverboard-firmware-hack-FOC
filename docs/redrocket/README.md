@@ -22,3 +22,12 @@ JTAG cable:
     - default: 660
     - pressed: 4030
     - **disconnected: 140**
+
+
+new UART cable:
+- GND is white
+
+## SW flashing
+```
+pio run -v -e VARIANT_HOVERCAR -t upload
+```
