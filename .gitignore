@@ -9,3 +9,5 @@ MDK-ARM/RTE/
 MDK-ARM/*.uvguix.*
 build/
 docs/redrocket/3dPrint/PotiCover.FCStd1
+docs/redrocket/3dPrint/*.gcode
+docs/redrocket/schematics/redrocket/redrocket.sch-bak
