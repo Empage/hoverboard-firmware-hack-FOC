@@ -517,6 +517,8 @@
   // #define ELECTRIC_BRAKE_ENABLE             // [-] Flag to enable electric brake and replace the motor "freewheel" with a constant braking when the input torque request is 0. Only available and makes sense for TORQUE mode.
   // #define ELECTRIC_BRAKE_MAX    100         // (0, 500) Maximum electric brake to be applied when input torque request is 0 (pedal fully released).
   // #define ELECTRIC_BRAKE_THRES  120         // (0, 500) Threshold below at which the electric brake starts engaging.
+
+  #define REVERSE_QUOTIENT 2                // 2: Backwards half as fast
 #endif
 
 // Multiple tap detection: default DOUBLE Tap on Brake pedal (4 pulses)
